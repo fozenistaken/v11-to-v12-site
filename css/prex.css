@@ -35,7 +35,7 @@ input.input100 {
   padding: 0 20px 0 23px;
 }
 form {
-  background-color: grey;
+  background-color: white;
   display: grid;
   border: 2px solid black;
   grid-gap: 1em;
@@ -53,7 +53,7 @@ input {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: white;
 }
 
 form button {
