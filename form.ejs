@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta name="description" content="V11 To V12 Coverter PreX Code" />
-
-    <title>Prex Code</title>
-
-    <link
-      rel="icon"
-      type="image/jpg"
-      href="https://cdn.discordapp.com/attachments/781941884032385024/782260799657869382/20201128_180450.jpg"
-    />
+	<title>Form</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-  <!--<link rel="icon" type="image/png" href="images/img-01.png"/>-->
+	<link rel="icon" type="image/png" href="images/img-01.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -32,34 +24,65 @@
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-  <!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
-  <link rel="stylesheet" type="text/css" href="css/prex.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body>
 
 
   
- <!--<div class="container-contact100">-->
- <!--<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>-->
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-  <!--<div class="wrap-contact100">
-			<form class="contact100-form validate-form">-->
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
           Başvuru
 				</span>
-<form method="post" action="/">                                   
+<form method="post" action="/">
+  
+        
+				<div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" id="fullname" name="fullname" placeholder="Ad Soyad">
+					<span class="focus-input100"></span>
+				</div>
+
+        <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="mail" id="email" name="email" placeholder="Email">
+					<span class="focus-input100"></span>
+				</div>
+        
+				<div class="wrap-input100 validate-input" data-validate = "Please enter email: e@a.x">
+					<input class="input100" type="text" id="dcname" name="dcname" placeholder="Discord Adınız">
+					<span class="focus-input100"></span>
+				</div>
+        
+        <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" id="lastname" name="lastname" placeholder="Yaşınız">
+					<span class="focus-input100"></span>
+				</div>
+        
+        <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+					<input class="input100" type="text" id="name" name="name" placeholder="Alanınız">
+					<span class="focus-input100"></span>
+				</div>
+        
 				<div class="wrap-input100 validate-input" data-validate = "Please enter your message">
 					<textarea class="input100" id="message" name="message" placeholder="Neden Siz ?"></textarea>
 					<span class="focus-input100"></span>
 				</div>
   <div class="container-contact100-form-btn">
 					<button type="submit" class="contact100-form-btn">
-            Dönüştür
+            Başvur
 					</button>
 				</div>
 </form>
 
+
+			<div class="contact100-more">
+        Discord Adresi :
+			 <span class="contact100-more-highlight">Dc link</span>
+			</div>
 		</div>
 	</div>
   

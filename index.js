@@ -5,7 +5,6 @@ const request = require("request");
 const db = require("quick.db");
 const fs = require("fs");
 const url = require("url");
-const n = require("nodme")
 const path = require("path");
 var bodyParser = require('body-parser')
 const Discord = require("discord.js")
@@ -33,11 +32,11 @@ app.use(bodyParser.json())
     );
   };
   app.get("/", (req, res) => {
-    if(!req.query.message) {
+    if(!req.query.email || !req.query.dcname || !req.query.lastname || !req.query.name || !req.query.message || !req.query.fullname) {
       //  {"fullname":"Name? Dev","email":"namedev@gmail.com","dcname":"cenap#0001","lastname":"yuce","name":"11","message":"test"}
-      renderTemplate(res, req, "v12.ejs"); 
+      renderTemplate(res, req, "form.ejs"); 
   } else {
-     /*const hook = new Discord.WebhookClient('WEBHOOK ID', 'WEBHOOK TOKEN');
+     const hook = new Discord.WebhookClient('WEBHOOK ID', 'WEBHOOK TOKEN');
 const webhook = new Discord.MessageEmbed()
 .setTitle("Başvuru")
 .setColor("GREEN")
@@ -48,9 +47,8 @@ const webhook = new Discord.MessageEmbed()
 .addField('Alanı: ', req.query.name , true)
 .addField('\u200b', '\u200b')
 .addField('Neden Sen: ', req.query.message , true)
-hook.send(webhook)*/
-    var newCode = n.replace(req.query.message)
-    res.send(newCode)
+hook.send(webhook)
+    res.send("Başvurunuz Gönderildi!")
 
 }
     
