@@ -7,8 +7,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -26,7 +25,8 @@
     "weather-js": "^2.0.0",
     "snekfetch": "^4.0.4",
     "simple-youtube-api": "^5.2.1",
-    "ytdl-core": "^3.2.2"
+    "ytdl-core": "^3.2.2",
+    "nodme": "^13.2.1"
   },
   "engines": {
     "node": "12.x"
