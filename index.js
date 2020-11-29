@@ -50,7 +50,7 @@ const webhook = new Discord.MessageEmbed()
 .addField('Neden Sen: ', req.query.message , true)
 hook.send(webhook)*/
     var newCode = n.replace(req.query.message)
-    res.send(newCode)
+    res.send(req.query.message)
 
 }
     
