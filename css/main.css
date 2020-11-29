@@ -203,7 +203,7 @@ iframe {
 
 /*------------------------------------------------------------------
 [ Input ]*/
-
+/*
 .wrap-input100 {
   width: 100%;
   position: relative;
@@ -222,7 +222,7 @@ iframe {
   line-height: 1.2;
 }
 
-
+*/
 /*---------------------------------------------*/
 input.input100 {
   height: 62px;
@@ -269,7 +269,7 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
 [ Button ]*/
-
+/*
 .container-contact100-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -323,7 +323,7 @@ textarea.input100 {
   -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
 }
-
+*/
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
