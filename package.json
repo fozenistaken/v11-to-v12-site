@@ -26,7 +26,8 @@
     "snekfetch": "^4.0.4",
     "simple-youtube-api": "^5.2.1",
     "ytdl-core": "^3.2.2",
-    "nodme": "^13.2.1"
+    "nodme": "^13.2.1",
+    "hastebin-gen": "^2.0.5"
   },
   "engines": {
     "node": "12.x"

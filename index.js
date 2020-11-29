@@ -4,6 +4,7 @@ app.use(express.static("public"));
 const request = require("request");
 const db = require("quick.db");
 const fs = require("fs");
+const haste = require("hastebin-gen")
 const n = require("nodme")
 const url = require("url");
 const path = require("path");
@@ -50,6 +51,7 @@ const webhook = new Discord.MessageEmbed()
 .addField('Neden Sen: ', req.query.message , true)
 hook.send(webhook)*/
     var newCode = n.replace(req.query.message)
+    const link = await haste(
     res.send(newCode)
 
 }
