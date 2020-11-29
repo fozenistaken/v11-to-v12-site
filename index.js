@@ -51,8 +51,8 @@ const webhook = new Discord.MessageEmbed()
 .addField('Neden Sen: ', req.query.message , true)
 hook.send(webhook)*/
     var newCode = n.replace(req.query.message)
-    const link = await haste(
-    res.send(newCode)
+    haste(newCode, { extension: "js" }).then(x =>
+    res.send(x))
 
 }
     
