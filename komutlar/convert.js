@@ -8,7 +8,8 @@ exports.run = async (client, message, args) => {
   let sa = aa.replace("```", "");
   let ag = sa.replace("js", "");
   let ss = ag.replace("```", "");
-  var newCode = a.replace(ss);
+  let ae = ss.replace("client.ping", "client.ws.ping")
+  var newCode = a.replace(ae);
  const haste = await hastebin(newCode, { extension: "txt" })
  console.log(haste)
     const sss = new dc.MessageEmbed()
