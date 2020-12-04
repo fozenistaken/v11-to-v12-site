@@ -115,6 +115,16 @@ app.get("/", (req, res) => {
   }
 });
 
+
+app.get("/", (req, res) => {
+  if (!req.query.message) {
+    renderTemplate(res, req, "fozen.ejs");
+  }
+});
+
+
+
+
 const listener = app.listen(process.env.PORT, () => {
   console.log("Panel şu portla başlatıldı:" + listener.address().port);
 });
