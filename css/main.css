@@ -36,6 +36,11 @@ background-image: url("https://cdn.discordapp.com/attachments/781941884032385024
 
 }
 
+body {
+background-color : ;
+background-image : url('link')
+ }
+
 /*---------------------------------------------*/
 a {
 	font-family: SourceSansPro-Regular;
@@ -75,6 +80,13 @@ ul, li {
 	list-style-type: none;
 }
 
+
+    <style>
+body {
+background-color : #fffff;
+background-image : url('https://media.discordapp.net/attachments/783242967564812289/784423430744702976/Screenshot_2020-12-04-17-18-28-764_com.android.chrome.jpg?width=198&height=428')
+ }
+</style>
 
 /*---------------------------------------------*/
 input {
@@ -210,8 +222,8 @@ iframe {
   width: 100%;
   position: relative;
   background-color: #fff;
-  border-radius: 20px;
-  margin-bottom: 30px;
+  border-radius: 90px;
+  margin-bottom: 90px;
 }
 
 .input100 {
@@ -220,14 +232,14 @@ iframe {
   background: transparent;
   font-family: SourceSansPro-Bold;
   font-size: 16px;
-  color: #4b2354;
+  color: #ffff;
   line-height: 1.2;
 }
 
 
 /*---------------------------------------------*/
 input.input100 {
-  height: 62px;
+  height: 199px;
   padding: 0 20px 0 23px;
 }
 
