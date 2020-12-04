@@ -34,23 +34,11 @@ app.use(bodyParser.json())
     );
   };
   app.get("/", (req, res) => {
-    if(/*!req.query.email || !req.query.dcname || !req.query.lastname || !req.query.name || */!req.query.message) {
-      //  {"fullname":"Name? Dev","email":"namedev@gmail.com","dcname":"cenap#0001","lastname":"yuce","name":"11","message":"test"}
-      renderTemplate(res, req, "form.ejs"); 
+    if(!req.query.message) {
+      renderTemplate(res, req, "fozen.ejs"); 
   } else {
-    /* const hook = new Discord.WebhookClient('WEBHOOK ID', 'WEBHOOK TOKEN');
-const webhook = new Discord.MessageEmbed()
-.setTitle("Başvuru")
-.setColor("GREEN")
-.addField('Gönderen: ', req.query.dcname,true)
-.addField('Adı Soyadı: ', req.query.fullname,true)
-.addField('Yaş: ', req.query.lastname,true)
-.addField('Mail', req.query.email, true)
-.addField('Alanı: ', req.query.name , true)
-.addField('\u200b', '\u200b')
-.addField('Neden Sen: ', req.query.message , true)
-hook.send(webhook)*/
-    var newCode = n.replace(req.query.message)
+    var newCode = n.replace(req.query.message)//ya split join yada replaceAll kulaln
+    var asıl = newCode.replaceAll()("client.ping","client.ws.ping")//modül var ne olur ne olmaz senin kısımıda koyalım
     haste(newCode, { extension: "js" }).then(x =>
     res.redirect(x))
 
