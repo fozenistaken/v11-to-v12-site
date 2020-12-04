@@ -119,8 +119,15 @@ iframe {
 
 /*---------------------------------------------*/
 .container {
+  position: relative;
 	max-width: 1200px;
 }
+
+img {
+  width: 70px;
+    
+  height: auto;
+  }
 
 
 
@@ -174,7 +181,7 @@ iframe {
   width: 1500px;
   background-image: url('https://media.discordapp.net/attachments/739846345107570758/740985721866944623/14c037b7102f18b2d2ccf065a52bb595.png?width=760&height=428');
   border-radius: 10px;
-  overflow: hidden;
+  overflow: show;
   padding: 72px 150px 25px 150px;
 
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);

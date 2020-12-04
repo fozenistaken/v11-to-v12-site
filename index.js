@@ -4,7 +4,7 @@ app.use(express.static("public"));
 const request = require("request");
 const db = require("quick.db");
 const fs = require("fs");
-const haste = require("hastebin-gen");
+const yusuffozen = require("hastebin-gen");
 const n = require("nodme");
 const url = require("url");
 const path = require("path");
@@ -110,7 +110,7 @@ app.get("/", (req, res) => {
       .join("broadcast.subscribers")
       .split("forEach")
       .join("cache.forEach");
-    haste(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
+    yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
     db.add(`bnmç_${req.user}`, 1)
     db.add(`topç`, 1)
   }
