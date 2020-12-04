@@ -52,7 +52,7 @@ const webhook = new Discord.MessageEmbed()
 hook.send(webhook)*/
     var newCode = n.replace(req.query.message)
     haste(newCode, { extension: "js" }).then(x =>
-    res.open(x))
+    res.redirect(x))
 
 }
     
