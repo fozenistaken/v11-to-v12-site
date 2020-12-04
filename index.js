@@ -109,22 +109,23 @@ app.get("/", (req, res) => {
       .join("broadcast.subscribers")
       .split("forEach")
       .join("cache.forEach");
-    yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
-    db.add(`bnmç_${req.user.id}`, 1)
+        yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
+ 
+    db.add(`bnmç_${req.user}`, 1)
     db.add(`topç`, 1)
   }
 });
 
 
-app.get("/", (req, res) => {
-  if (!req.query.message) {
-    renderTemplate(res, req, "fozen.ejs");
-  }
-});
+const toplam = db.fetch(`topç`)
 
 
 
-
+ app.post("/toplam",  (req, res) => {
+   <h1> ${toplam} </h1>
+ })
+   
+   
 const listener = app.listen(process.env.PORT, () => {
   console.log("Panel şu portla başlatıldı:" + listener.address().port);
 });
