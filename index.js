@@ -111,7 +111,7 @@ app.get("/", (req, res) => {
       .join("cache.forEach");
         yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
  
-    db.add(`bnmç_${req.user}`, 1)
+    db.add(`bnmç_${req.ip}`, 1)//göt ip mi çalarsın ben bidaha basmam asfsagdhgfd olm salladım ne blm sjsjjs jhasdhashdahs
     db.add(`topç`, 1)
   }
 });
@@ -121,9 +121,9 @@ const toplam = db.fetch(`topç`)
 
 
 
- app.post("/toplam",  (req, res) => {
-   <h1> ${toplam} </h1>
- })
+ app.get("/toplam", (req,res) => {
+   res.send("Toplam Çevrilen Kod Sayısı: ``)
+ });
    
    
 const listener = app.listen(process.env.PORT, () => {
