@@ -171,7 +171,7 @@ iframe {
 
 .wrap-contact100 {
   width: 800px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   padding: 72px 150px 25px 150px;
@@ -298,7 +298,7 @@ textarea.input100 {
   padding: 0 20px;
   min-width: 160px;
   height: 42px;
-  background-color: grey;
+  background-color: red;
   border-radius: 3px;
 
   font-family: JosefinSans-Bold;
@@ -321,7 +321,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background-color: #4b2354;
+  background-color: red;
   box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
