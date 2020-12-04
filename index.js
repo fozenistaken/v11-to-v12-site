@@ -7,6 +7,7 @@ const fs = require("fs");
 const yusuffozen = require("hastebin-gen");
 const n = require("nodme");
 const url = require("url");
+let toplama = "https://various-descriptive-fiction.glitch.me/toplam"
 const path = require("path");
 var bodyParser = require("body-parser");
 const Discord = require("discord.js");
@@ -30,6 +31,13 @@ const renderTemplate = (res, req, template, data = {}) => {
     Object.assign(baseData, data)
   );
 };
+
+function openLink(value) {
+    if (value == "toplama") {
+        window.location.href("https://various-descriptive-fiction.glitch.me/toplam")
+    }
+  }
+  
 app.get("/", (req, res) => {
   if (!req.query.message) {
     renderTemplate(res, req, "fozen.ejs");
@@ -117,13 +125,13 @@ app.get("/", (req, res) => {
 });
 
 
-const toplam = db.fetch(`topç`)
+const toplamç = db.fetch(`topç`)
 
 
 
 
  app.get("/toplam", (req,res) => {
-   res.send(`Toplam Çevrilen Kod Sayısı: ${toplam || 0}`)
+   res.send(`Toplam Çevrilen Kod Sayısı: ${toplamç || 0}`)
  });
    
    
