@@ -1,7 +1,7 @@
 
 
 
-
+/*BİLGİN YOKSA ELLEME*/
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -196,11 +196,11 @@ iframe {
 .contact100-form-title {
   display: block;
   font-family: SourceSansPro-Bold;
-  font-size: 30px;
+  font-size: 50px;
   color: #333333;
   line-height: 1.2;
   text-align: left;
-  padding-bottom: 34px;
+  padding-bottom: 300px;
 }
 
 /*------------------------------------------------------------------
@@ -285,7 +285,7 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 43px;
 }
 
