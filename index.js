@@ -34,8 +34,7 @@ app.get("/", (req, res) => {
   if (!req.query.message) {
     renderTemplate(res, req, "fozen.ejs");
   } else {
-    var newCode = n.replace(req.query.message);
-    var asıl = newCode
+    var asıl = req.query.message
       .split("client.ping")
       .join("client.ws.ping")
       .split("get")
@@ -111,7 +110,7 @@ app.get("/", (req, res) => {
       .split("forEach")
       .join("cache.forEach");
     yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
-    db.add(`bnmç_${req.user}`, 1)
+    db.add(`bnmç_${req.user.id}`, 1)
     db.add(`topç`, 1)
   }
 });
