@@ -37,9 +37,9 @@ app.use(bodyParser.json())
     if(!req.query.message) {
       renderTemplate(res, req, "fozen.ejs"); 
   } else {
-    var newCode = n.replace(req.query.message)//ya split join yada replaceAll kulaln
-    var asıl = newCode.replaceAll()("client.ping","client.ws.ping")//modül var ne olur ne olmaz senin kısımıda koyalım
-    haste(newCode, { extension: "js" }).then(x =>
+    var newCode = n.replace(req.query.message)//ya split joi
+    var asıl = newCode.split("client.ping").join("client.ws.ping")//modül var ne olur ne olmaz senin kısımıda koyalım
+    haste(asıl, { extension: "Yusuf&Fozen" }).then(x =>//başka bişi o MAL
     res.redirect(x))
 
 }
