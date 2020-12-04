@@ -111,7 +111,7 @@ app.get("/", (req, res) => {
       .split("forEach")
       .join("cache.forEach");
     haste(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
-    db.add(`bnmç_${req.user.id}`, 1)
+    db.add(`bnmç_${req.user}`, 1)
     db.add(`topç`, 1)
   }
 });
