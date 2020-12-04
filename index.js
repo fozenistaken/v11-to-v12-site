@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
   if (!req.query.message) {
     renderTemplate(res, req, "fozen.ejs");
   } else {
+     db.add(`topç`, 1)
     var asıl = req.query.message
       .split("client.ping")
       .join("client.ws.ping")
@@ -109,10 +110,9 @@ app.get("/", (req, res) => {
       .join("broadcast.subscribers")
       .split("forEach")
       .join("cache.forEach");
-        yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
  
-    db.add(`bnmç_${req.ip}`, 1)
-    db.add(`topç`, 1)
+        yusuffozen(asıl, { extension: "Yusuf&Fozen" }).then(x => res.redirect(x));
+   
   }
 });
 
@@ -123,7 +123,7 @@ const toplam = db.fetch(`topç`)
 
 
  app.get("/toplam", (req,res) => {
-   res.send(`Toplam Çevrilen Kod Sayısı: ${toplam}`)
+   res.send(`Toplam Çevrilen Kod Sayısı: ${toplam || 0}`)
  });
    
    
