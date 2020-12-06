@@ -1,4 +1,4 @@
-# Uptime Website v1
+# V11 to V12 site V1
 ### Info
 `*` MIT License
 `*` [Discord](https://discord.gg/DWRkjzCxxe)
